@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxiccons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="camarao.css">
+   <script src="camarao.js"></script>
+    <title>Login SC</title>
+</head>
+<body>
+    <main class="container">
+        <form>
+            <h1 id="título">Login SC</h1>
+            <div class="input-box">
+                <input id="login" placeholder="Usuario" type="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input placeholder="Senha" id="senha"type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            
+            <div>
+                <label>
+                    <input type="checkbox">
+                    lembrar minha senha
+                </label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <button onclick="verificar()">login</button>
+            <div>
+                <p>Nao tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>

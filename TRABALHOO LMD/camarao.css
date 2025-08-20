@@ -1,0 +1,24 @@
+body {
+    margin: 50px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    background-color:beige;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #008cff;
+    color: blanchedalmond;
+    border: none;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor:pointer;
+
+}
