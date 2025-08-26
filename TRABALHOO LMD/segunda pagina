@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Lab</title>
+</head>
+<body>
+    <div class="container"></div>
+    <h1 id="laboratorio">
+
+    </h1>
+<header>
+    Aura Lab - Laboratorio de Tecnologia
+</header>
+<ul>
+ <li>Quem somos</li>
+ <li>Visita Virtual</li>
+ <li>Pesquisas</li>
+</ul>
+<div id="codigo"></div>
+<footer>
+
+<a href="">Instagram</a>
+</footer>
+<script>
+     
+</script>
+</body>
+</html>
