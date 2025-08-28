@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Lab</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <div class="container"></div>
     <h1 id="laboratorio">
 
     </h1>
-<header>
-    Aura Lab - Laboratorio de Tecnologia
-</header>
-<ul>
- <li>Quem somos</li>
- <li>Visita Virtual</li>
- <li>Pesquisas</li>
-</ul>
-<div id="codigo"></div>
-<footer>
+   <header>
+        Aura Lab - Laboratirio Tecnologico
+    </header>
+    <h2> Escolha em uma das opçoes para saber mais sobre nos:</h2>
 
-<a href="">Instagram</a>
+    <ul>
+        <li onclick="carregarCurso('Quem somos?')">Quem somos</li>
+        <li onclick="carregarCurso('Visita Virtual')">Visita virtual</li>
+        <li onclick="carregarCurso('Pesquisas')">Pesquisas</li>
+    </ul>
+    <a id="button" href="index2.html">Voltar a pagina inicial</a>
+    <div id="codigo"></div>
+<footer>
+    &copy; 2025 Aura Lab - Todos os direitos reservados.
+    <p>Telefone:(31) 93333-4444</p>
+    <a href="https://www.instagram.com/aura_lab/" style="text-decoration:none; color: rgb(9, 9, 9);">instagram</a>
 </footer>
-<script>
-     
+<script async> async function carregarCurso(curso) {
+    try{
+        document.getElementById("codigo") .innerHTML= "Carregando informacoes do curso...";
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+let mensagens = { 
+    "Quem somos?": "Somos um laboratorio de tecnologia focado em pesquisa e desenvolvimento.",
+    "Visita Virtual": "Oferecemos visitas virtuais para conhecer nossas instalações e projetos.",
+    "Pesquisas": "Nossas pesquisas abrangem diversas áreas da tecnologia, incluindo IA, robotica e mais."
+
+};
+document.getElementById("codigo").innerHTML = mensagens[curso];
+
+ }catch (erro) {
+    document.getElementById("codigo").innerHTML = "Erro ao carregar informações do curso.";
+    console.error("Erro capturado:", erro);
+
+}
+}
 </script>
 </body>
+
 </html>
