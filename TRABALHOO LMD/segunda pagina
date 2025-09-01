@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Lab</title>
+    <script src="script.js"></script>
     <style>
-        
+    body {
+    
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    background-color:rgb(64, 217, 255);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #008cff;
+    color: rgb(31, 19, 141);
+    border: none;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor:pointer;
+
+} 
+footer{
+    text-align: center;
+    background-color:rgb(0, 120, 175);
+    padding: 30px;
+    border-radius: 10px;
+    padding: 15px;
+}
     </style>
 </head>
 <body>
-    <div class="container"></div>
-    <h1 id="laboratorio">
-
-    </h1>
-   <header>
-        Aura Lab - Laboratirio Tecnologico
+    
+   <header class="container">
+        Aura Lab - Laboratorio Tecnologico
     </header>
     <h2> Escolha em uma das opçoes para saber mais sobre nos:</h2>
 
@@ -23,16 +52,17 @@
         <li onclick="carregarCurso('Visita Virtual')">Visita virtual</li>
         <li onclick="carregarCurso('Pesquisas')">Pesquisas</li>
     </ul>
-    <a id="button" href="index2.html">Voltar a pagina inicial</a>
+    <a id="button" href="index.html">Voltar a pagina inicial</a>
     <div id="codigo"></div>
 <footer>
     &copy; 2025 Aura Lab - Todos os direitos reservados.
     <p>Telefone:(31) 93333-4444</p>
     <a href="https://www.instagram.com/aura_lab/" style="text-decoration:none; color: rgb(9, 9, 9);">instagram</a>
 </footer>
-<script async> async function carregarCurso(curso) {
+<script>
+ async function carregarCurso(curso) {
     try{
-        document.getElementById("codigo") .innerHTML= "Carregando informacoes do curso...";
+        document.getElementById("codigo") .innerHTML= "Carregando informacoes do laboratorio...";
         await new Promise(resolve => setTimeout(resolve, 2000));
 
 let mensagens = { 
@@ -44,7 +74,7 @@ let mensagens = {
 document.getElementById("codigo").innerHTML = mensagens[curso];
 
  }catch (erro) {
-    document.getElementById("codigo").innerHTML = "Erro ao carregar informações do curso.";
+    document.getElementById("codigo").innerHTML = "Erro ao carregar informações do site.";
     console.error("Erro capturado:", erro);
 
 }
