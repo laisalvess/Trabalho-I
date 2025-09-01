@@ -11,7 +11,7 @@ const usuarios =[
         if(usuario == usuarios[i].login && senha == usuarios[i].senha){
             encontrado =true;
             título.innerHTML="Seja bem-vindo a página "  + usuarios[i].login + "!";
-window.location.href="https://prozeducacao.com.br/"
+window.location.href="CAMARAO.html"
 
             
         }
