@@ -48,9 +48,12 @@ footer{
     <h2> Escolha em uma das opçoes para saber mais sobre nos:</h2>
 
     <ul>
-        <li onclick="carregarCurso('Quem somos?')">Quem somos</li>
-        <li onclick="carregarCurso('Visita Virtual')">Visita virtual</li>
-        <li onclick="carregarCurso('Pesquisas')">Pesquisas</li>
+        <li onclick="carregarCurso('Quem somos')">Quem somos</li>
+        <li onclick="carregarCurso('O que é o outubro rosa')">O que é o outubro rosa</li>
+        <li onclick="carregarCurso('O que é o novembro azul')">O que é o novembro azul</li>
+        <li onclick="carregarCurso('Prevenções do câncer de mama')">Prevenções do câncer de mama</li>
+        <li onclick="carregarCurso('Prevenções do câncer de próstata')">Prevenções do câncer de próstata</li>
+
     </ul>
     <a id="button" href="index.html">Voltar a pagina inicial</a>
     <div id="codigo"></div>
@@ -65,11 +68,12 @@ footer{
         document.getElementById("codigo") .innerHTML= "Carregando informacoes do laboratorio...";
         await new Promise(resolve => setTimeout(resolve, 2000));
 
-let mensagens = { 
-    "Quem somos?": "Somos um laboratorio de tecnologia focado em pesquisa e desenvolvimento.",
-    "Visita Virtual": "Oferecemos visitas virtuais para conhecer nossas instalações e projetos.",
-    "Pesquisas": "Nossas pesquisas abrangem diversas áreas da tecnologia, incluindo IA, robotica e mais."
-
+let mensagens = {
+    "Quem somos?": "Somos um laboratorio de tecnologia focado em ajudar e previnir o câncer de mama e próstata.",
+    "O que é o outubro rosa": "Campanha que conscientiza sobre o câncer de mama e destaca a importância do diagnóstico precoce.",
+    "O que é o novembro azul": "movimento dedicado á saúde do homem, com foco na prevenção de próstata."
+    "Prevenções do câncer de mama": "As prevenções do câncer de mama são: fazer mamografia na idade indicada, realizar autoexame, manter hábitos saudáveis."
+    "Prevenções do câncer de próstata":"fazer exames preventivos, alimentação equilibrada, atividade física e evitar tabagismo."
 };
 document.getElementById("codigo").innerHTML = mensagens[curso];
 
